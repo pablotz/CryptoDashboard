@@ -1,0 +1,273 @@
+/* Este es el que nos alinea el contenido en la misma linea */
+
+.app-container {
+  margin: auto;
+  overflow: hidden;
+  max-width: 1500px; /* 1200px; */
+  padding: 50px 0; /* --padding-container: 100px 0; */
+}
+
+/* -------------------------------------------------------- */
+
+.title-text {
+  font-size: 70px;
+  color: rgb(248, 240, 240);
+  font-weight: 300;
+}
+
+.title-text {
+  font-size:3.5rem;
+  color:white;
+}
+
+.title-app {
+  text-align: center;
+  margin-bottom: 5.5em;
+}
+
+.link {
+  font-family:arial, helvetica, sans-serif;
+  text-decoration: none;
+    position: relative;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    color: inherit;
+    font-weight: 600;
+    border-bottom: 5px solid white;
+    transition: 300ms ease-in-out;
+    cursor: text;
+}
+
+.link::after {
+  content: "";
+    position: absolute;
+    right: 0px;
+    width: 0px;
+    bottom: -5px;
+    background: #ff3f6a;
+    height: 5px;
+    transition-property: width;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+  
+}
+
+.link:focus::after, .link:hover::after {
+  left:0px;
+  right:auto;
+  width:100%;
+}
+
+
+.coin-search {
+    text-align: center;
+    color: white;
+}
+
+.user-box{
+    text-align: center;
+    width: 280px;
+    padding: 10px 10px;
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border: 3px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+::placeholder {
+  color: rgb(255, 255, 255);
+  opacity: 1; /* Firefox */
+}
+
+
+.input-search {
+  display: inline-block;
+}
+
+.coin-app {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 50px 
+}
+
+.coin-container{
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+
+
+.coin-card {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.507);
+  background-color: rgba(0, 0, 0, 0.76);
+  border-radius: 7%;
+  transition: 0.5s;
+  width: 400px;
+  height: 200px;
+  padding: 15px;
+}
+
+
+
+.coinimg {
+    width: 20%;
+    margin-top: 10px;
+}
+
+.coin-name {
+    display: inline-block;
+    margin-left: 8%;
+    color: rgb(199, 199, 199);
+    overflow: hidden;
+}
+
+.sm-txt {
+  font-size: 28px;
+}
+
+.coin-symbol {
+    display: inline-block;
+    margin-left: 5%;
+    color: white;
+    font-style: italic;
+    background-color: rgba(240, 248, 255, 0.089);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.coin-price {
+    display: inline-block;
+    margin-left: 10%;
+    color: white;
+    font-size: 25px;
+    font-weight: 1000;
+}
+
+.coin-percent {
+    display: inline-block;
+    margin-left: 10%;
+    color: white;
+}
+
+.red {
+    color: #dd1d1d;
+    font-weight: bold;
+}
+
+.green {
+    color: #11d011;
+    font-weight: bold;
+}
+
+select {
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #476188;
+  background-image: none;
+  
+}
+
+/* Custom Select */
+.select {
+  position: relative;
+  display: flex;
+  width: 9em;
+  height: 3em;
+  line-height: 3;
+  background: #ffffffca;
+  overflow: hidden;
+  border-radius: .30em;
+  box-shadow: 3px 10px 15px 0 rgba(0, 0, 0, 0.507);
+  margin-left: 3%;
+  margin-top: 2%;
+}
+select {
+  flex: 1;
+  padding: 0 .5em;
+  color: #fff;
+  cursor: pointer;
+  font-size: large;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #1a355d;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+  
+}
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
+
+option{
+    font-size: 25px;
+}
+
+.fa-star {
+  color: rgba(255, 208, 0, 0.897);
+}
+
+.like-btn {
+  background-color: rgba(240, 248, 255, 0);
+  width: 40px;
+  height: 40px;
+  border: none;
+}
+
+.like-btn:hover {
+  cursor: pointer;
+}
+
+.like-btn{
+  position: relative;
+  left: 90%;
+  bottom: 80px;
+}
+
+
+.favorites {
+  background-color: rgba(240, 248, 255, 0);
+  width: 40px;
+  height: 40px;
+  border: none;
+}
+
+.favorites:hover {
+  cursor: pointer;
+}
+
+.filter-favorites {
+  margin: auto;
+}
+
+.favorite-text {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.filter-favorites {
+  background-color: rgba(255, 255, 255, 0.102);
+  border-radius: 0.5em;
+  width: 200px;
+  position: relative;
+  transition: 300ms ease-in-out;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+
+
