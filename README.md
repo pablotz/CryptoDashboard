@@ -1,4 +1,4 @@
-# CRYPTODASHBOARD
+# CRYPTO-DASHBOARD
 
 #### Aplication created by PabloTz
 personal project
