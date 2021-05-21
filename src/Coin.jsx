@@ -25,14 +25,22 @@ const Coin = ({ name, image, symbol, price, volume, priceChange, marketcap, like
                         <button className="like-btn" onClick={() => {likedCrypto(name, id); addFav()}}><i class="far fa-star fa-2x"></i></button>
                     )}
                     <img src={image} alt="crypto" className="coinimg" />
-                    { name.length <= 12 ?
-                        (<h1 className="coin-name">{name}</h1>) :
-                        (<h1 className="coin-name sm-txt">{name}</h1>)
+                    { name.length <= 12?
+                        (<p className="coin-name">{name}</p>) :
+                        (<p className="coin-name">{name.substring(0,9)}...</p>)
                     }
                 </div>
                 <div className="coin-data">
-                    <p className="coin-symbol">${symbol.toUpperCase()}</p>
-                    <p className="coin-price">${price}</p>
+                    {
+                        symbol.length > 7 ? 
+                        (<p className="coin-symbol sm-symbol">${symbol.toUpperCase()}</p>) :
+                        (<p className="coin-symbol ">${symbol.toUpperCase()}</p>)
+                    }
+                    {
+                        price.toString().length > 8? 
+                        (<p className="coin-price-sm">${price}</p>) :
+                        (<p className="coin-price">${price}</p>)
+                    }
                     {priceChange < 0 ? (
                         <p className="coin-percent red">{priceChange.toFixed(2)}%</p>
                     ) : (

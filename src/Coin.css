@@ -87,6 +87,11 @@
   display: inline-block;
 }
 
+
+.coin {
+  height: 120px;
+}
+
 .coin-app {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -116,6 +121,8 @@
 .coinimg {
     width: 20%;
     margin-top: 10px;
+    position: relative;
+    margin-bottom: 30px;
 }
 
 .coin-name {
@@ -123,15 +130,19 @@
     margin-left: 8%;
     color: rgb(199, 199, 199);
     overflow: hidden;
+    font-size: 40px;
+    font-weight: bold;
 }
 
+
+
 .sm-txt {
-  font-size: 28px;
+  font-size: 10px;
 }
 
 .coin-symbol {
     display: inline-block;
-    margin-left: 5%;
+    margin-left: 10%;
     color: white;
     font-style: italic;
     background-color: rgba(240, 248, 255, 0.089);
@@ -139,18 +150,31 @@
     border-radius: 10px;
 }
 
+.sm-symbol{
+  font-size: 14px;
+}
+
 .coin-price {
     display: inline-block;
-    margin-left: 10%;
+    margin-left: 8%;
     color: white;
     font-size: 25px;
     font-weight: 1000;
+}
+
+.coin-price-sm {
+  display: inline-block;
+  margin-left: 5%;
+  color: white;
+  font-size: 20px;
+  font-weight: 1000;
 }
 
 .coin-percent {
     display: inline-block;
     margin-left: 10%;
     color: white;
+    font-size: 20px;
 }
 
 .red {
@@ -236,7 +260,7 @@ option{
 .like-btn{
   position: relative;
   left: 90%;
-  bottom: 80px;
+  bottom: 100px;
 }
 
 
@@ -268,6 +292,51 @@ option{
   transition: 300ms ease-in-out;
   margin-left: 3%;
   margin-top: 2%;
+}
+
+@media screen and (max-width:768px){
+  .coin-app {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 50px 0px;
+}
+
+.coin-card {
+  width: 370px;
+  height: 200px;
+  padding: 0px;
+}
+
+.like-btn{
+  position: relative;
+  left: 85%;
+  bottom: 50px;
+}
+
+.coin-name {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.coinimg {
+  width: 20%;
+  margin-top: 15px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.coin-price {
+  margin-left: 5%;
+}
+
+.coin-price-sm {
+  margin-left: 3%;
+}
+
+.sm-symbol{
+  font-size: 10px;
+}
+
 }
 
 
