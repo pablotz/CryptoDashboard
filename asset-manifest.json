@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/CryptoDashboard/static/css/main.50dcc3ef.chunk.css",
-    "main.js": "/CryptoDashboard/static/js/main.bbaadbf9.chunk.js",
-    "main.js.map": "/CryptoDashboard/static/js/main.bbaadbf9.chunk.js.map",
+    "main.css": "/CryptoDashboard/static/css/main.fd49d974.chunk.css",
+    "main.js": "/CryptoDashboard/static/js/main.a5ebdf02.chunk.js",
+    "main.js.map": "/CryptoDashboard/static/js/main.a5ebdf02.chunk.js.map",
     "runtime-main.js": "/CryptoDashboard/static/js/runtime-main.fd18e528.js",
     "runtime-main.js.map": "/CryptoDashboard/static/js/runtime-main.fd18e528.js.map",
     "static/css/2.68935b27.chunk.css": "/CryptoDashboard/static/css/2.68935b27.chunk.css",
@@ -10,14 +10,14 @@
     "static/js/2.b672de19.chunk.js.map": "/CryptoDashboard/static/js/2.b672de19.chunk.js.map",
     "index.html": "/CryptoDashboard/index.html",
     "static/css/2.68935b27.chunk.css.map": "/CryptoDashboard/static/css/2.68935b27.chunk.css.map",
-    "static/css/main.50dcc3ef.chunk.css.map": "/CryptoDashboard/static/css/main.50dcc3ef.chunk.css.map",
+    "static/css/main.fd49d974.chunk.css.map": "/CryptoDashboard/static/css/main.fd49d974.chunk.css.map",
     "static/js/2.b672de19.chunk.js.LICENSE.txt": "/CryptoDashboard/static/js/2.b672de19.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.fd18e528.js",
     "static/css/2.68935b27.chunk.css",
     "static/js/2.b672de19.chunk.js",
-    "static/css/main.50dcc3ef.chunk.css",
-    "static/js/main.bbaadbf9.chunk.js"
+    "static/css/main.fd49d974.chunk.css",
+    "static/js/main.a5ebdf02.chunk.js"
   ]
 }
